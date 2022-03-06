@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;900&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <link rel="icon" href="./assets/food-icon.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <title>Dinner Decider</title>
+</head>
+<body>
+
+    <header>
+        <section class="heading">
+            <div class="wrapper">
+                    <div class="meal-search">
+                        <img src="./assets/header-image.png" alt="header graphic">
+
+                        <div class="header-text">
+                            <div class="animate__animated animate__bounce animate__slow">
+                                <h1>Let's cook!</h1>
+                            </div>
+                            <form action="#">
+                                <label for="search-input">Whatcha' craving?</label>
+                        
+                                <div class="search-bar">
+                                    <input type="text" placeholder="chicken" id="search-input">
+                                    <input type="submit" value="Next Step">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </section>
+    </header>
+
+    <!-- Take in any dietary restrictions -->
+    <section class="dietary">
+        <div class="wrapper">
+            <div class="dietary-sub-heading">
+                <h2>QUICK QUESTION</h2>
+            </div>
+            <div class="dietary-main">
+                <h1>Do you have any dietary restrictions?</h1>
+            </div>
+
+            
+            <fieldset class="choices">
+                    <ul>
+                        <li class="answerOption">
+                            <input type="checkbox" id="fodmap-free" value="fodmap-free" name="deitary">
+                            <label for="fodmap-free">Low FODMAP</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="answerOption">
+                            <input type="checkbox" id="vegan" value="vegan" name="deitary">
+                            <label for="vegan">Vegan</label>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li class="answerOption">
+                            <input type="checkbox" id="gluten-free" value="gluten-free" name="deitary">
+                            <label for="gluten-free">Gluten-free</label>
+                        </li>
+                    </ul>
+            </fieldset>
+            <button class="choiceButton">Search</button>
+            <img src="./assets/low-banner.png" alt="banner image of abstract shapes and food icons">
+        </div>
+    </section>
+            
+
+    <section class="results">
+        <div class="wrapper">
+            <div class="results-header">
+                <h1>Here's what you should eat</h1>
+            </div>
+                <img class="asset-image-footer" src="./assets/corner-asset.png" alt="abstract graphic">
+            
+            <!-- results to be added here  -->
+
+            <div class="recipe-result">
+                <ul class="gallery"></ul>
+
+                <button class="reset">This doesn't look very good...🤢 </button>
+            </div>
+
+
+        </div>
+
+    </section>
+    
+    <footer>
+        <p>Made by Sylvia Raposo &#9825; Created at <a href='https://junocollege.com/'>Juno College</a></p>
+    </footer>
+</body>
+</html>
